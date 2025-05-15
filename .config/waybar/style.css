@@ -1,0 +1,43 @@
+@import "../waybar/catppuccin-colors.css";
+
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    min-height: 0;
+    /* set font-size to 100% if font scaling is set to 1.00 using nwg-look */
+    font-size: 97%;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+}
+
+window#waybar {
+    background-color: @mantle; 
+    padding-top: 4px;
+    padding-bottom: 5px;
+    margin-top: 6px;
+}
+
+window#waybar * {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#workspaces button {
+    color: @surface2;
+}
+
+#workspaces button.active {
+    color: @mauve;
+}
+
+#workspaces button:hover {
+    background-color: @surface0;
+}
+
+#network,
+#custom-weather,
+#pulseaudio,
+#custom-updater,
+#custom-power,
+#clock {
+    color: @surface2;
+}
