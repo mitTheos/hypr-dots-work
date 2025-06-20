@@ -18,15 +18,15 @@
 ],
 
 "modules-center": [
-    "clock",
+	"clock",
 	"hyprland/workspaces#roman",
-    "clock#2",
+	"clock#2",
 ],
 
 "modules-right": [
 	"pulseaudio",
 	"custom/updater",
 	"custom/separator#blank",
-	"custom/power",
+	"battery"
 	],
 }

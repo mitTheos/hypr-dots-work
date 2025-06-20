@@ -10,7 +10,7 @@
 }
 
 window#waybar {
-    background-color: @mantle; 
+    background-color: @mantle;
     padding-top: 4px;
     padding-bottom: 5px;
     margin-top: 6px;
@@ -29,10 +29,7 @@ window#waybar * {
     color: @mauve;
 }
 
-#workspaces button:hover {
-    background-color: @surface0;
-}
-
+#battery,
 #network,
 #custom-weather,
 #pulseaudio,
