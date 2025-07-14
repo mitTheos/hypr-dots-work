@@ -128,6 +128,15 @@ for key ('j') bindkey -M vicmd ${key} history-substring-search-down
 unset key
 # }}} End configuration added by Zim install
 
+# y shell wrapper for yazi that provides the ability to change working dir when exiting yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
 # Set-up icons for files/folders in terminal
 alias ls='eza -a --icons'
 alias ll='eza -al --icons'
@@ -146,3 +155,12 @@ export PATH="$PATH:$HOME/.local/bin"
 export PATH=$PATH:/home/tim/.spicetify
 
 export PATH=$PATH:/home/tim/.dotnet/tools
+
+export JAVA_HOME=/usr/lib/jvm/java-24-jdk
+
+export EDITOR=nvim
+
+# pyenv init
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
