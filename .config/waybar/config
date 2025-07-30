@@ -1,11 +1,12 @@
 /* ---- 💫 https://github.com/JaKooLit 💫 ---- */
 // Sleek
 
-{
+[{
 "reload_style_on_change": true,
 "include": "~/.config/waybar/modules",
 "layer": "top",
 "position": "top",
+"output": ["DP-3", "DP-4"],
 "height": 14,
 "margin-left": 10,
 "margin-right": 10,
@@ -24,9 +25,36 @@
 ],
 
 "modules-right": [
-	"pulseaudio",
+	"wireplumber",
 	"custom/updater",
 	"custom/separator#blank",
 	"battery"
 	],
-}
+},
+{
+"reload_style_on_change": true,
+"include": "~/.config/waybar/modules",
+"layer": "top",
+"position": "top",
+"output": ["HDMI-A-1"],
+"height": 14,
+"margin-left": 10,
+"margin-right": 10,
+"margin-top": 2,
+
+"modules-left": [
+	"network",
+	"custom/separator#blank",
+	"custom/weather",
+],
+
+"modules-center": [
+	"clock",
+	"clock#2",
+],
+
+"modules-right": [
+	"custom/firefoxvolume",
+	"wireplumber",
+	],
+}]

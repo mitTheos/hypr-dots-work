@@ -32,8 +32,10 @@ window#waybar * {
 #battery,
 #network,
 #custom-weather,
+#wireplumber,
 #pulseaudio,
 #custom-updater,
+#custom-firefoxvolume,
 #custom-power,
 #clock {
     color: @surface2;

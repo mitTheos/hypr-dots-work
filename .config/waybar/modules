@@ -328,7 +328,7 @@
 	},
 	"scroll-step": 5.0,
 	"on-click": "~/.config/waybar/scripts/Volume.sh --toggle",
-	"on-click-right": "pavucontrol -t 3",
+	"on-click-right": "pwvucontrol",
 	"on-scroll-up": "~/.config/waybar/scripts/Volume.sh --inc",
 	"on-scroll-down": "~/.config/waybar/scripts/Volume.sh --dec",
 	"tooltip-format": "{icon} {desc} | {volume}%",
@@ -385,10 +385,10 @@
 	"spacing": 4,
 },
 "wireplumber": {
-	"format": "{icon} {volume} %",
+	"format": "{icon} {volume}%",
 	"format-muted": " Mute",
 	"on-click": "~/.config/waybar/scripts/Volume.sh --toggle",
-	"on-click-right": "pavucontrol -t 3",
+	"on-click-right": "pwvucontrol",
 	"on-scroll-up": "~/.config/waybar/scripts/Volume.sh --inc",
 	"on-scroll-down": "~/.config/waybar/scripts/Volume.sh --dec",
 	"format-icons": [
@@ -481,6 +481,11 @@
     	"interval": 3600,
     	"exec": "wttrbar --nerd --ampm --observation-time --hide-conditions --location Horgen --date-format %d.%m",
     	"return-type": "json"
+},
+"custom/firefoxvolume" : {
+	"format": " {}%",
+    	"interval": 1,
+	"exec": "sh /home/tim/.config/waybar/scripts/firefox_volume.sh"
 },
 // Separators
 "custom/separator#dot": {
