@@ -6,7 +6,7 @@
 "include": "~/.config/waybar/modules",
 "layer": "top",
 "position": "top",
-"output": ["DP-3", "DP-4"],
+"output": ["DP-2"],
 "height": 14,
 "margin-left": 10,
 "margin-right": 10,
