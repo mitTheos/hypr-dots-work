@@ -43,4 +43,4 @@ font-family = "FiraCode Nerd Font Mono"
 # resize-overlay-duration = 4s 200ms
 
 command = zsh
-theme = tokyonight
+theme = TokyoNight Night
