@@ -142,6 +142,10 @@ alias ls='eza -a --icons'
 alias ll='eza -al --icons'
 alias lt='eza -a --tree --level=3 --icons'
 
+# alias hyprland start
+
+alias hyp='start-hyprland'
+
 # Set-up FZF key bindings (CTRL R for fuzzy history finder)
 source <(fzf --zsh)
 
