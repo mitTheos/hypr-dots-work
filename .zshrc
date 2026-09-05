@@ -138,9 +138,13 @@ function y() {
 }
 
 # Set-up icons for files/folders in terminal
-alias ls='eza -a --icons'
-alias ll='eza -al --icons'
-alias lt='eza -a --tree --level=3 --icons'
+alias ls='eza -a --icons always'
+alias ll='eza -al --icons always'
+alias lt='eza -a --tree --level=3 --icons always'
+
+# klor build alias
+alias westklorleft='west build -d build/left -p -b nice_nano -- -DSHIELD=klor_left -DZMK_CONFIG="/home/tim/Projects/zmk-config-klor/config"'
+alias westklorright='west build -d build/right -p -b nice_nano -- -DSHIELD=klor_right -DZMK_CONFIG="/home/tim/Projects/zmk-config-klor/config"'
 
 # alias hyprland start
 
@@ -164,7 +168,7 @@ export PATH=$PATH:/home/tim/.spicetify
 
 export PATH=$PATH:/home/tim/.dotnet/tools
 
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-21-openjdk
 
 export EDITOR=nvim
 
